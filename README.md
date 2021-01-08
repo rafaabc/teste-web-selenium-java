@@ -55,7 +55,7 @@ Dependências:
 - LoginPageObjectTest: classe de teste contendo o mesmo script de teste mas com design pattern Page Object
 - resources: diretório com os arquivos .csv com massa de dados
 
-#Executando via linha de comando
+# Executando via linha de comando
 <p align="justify"> Para executar os testes via linha de comando de todas as classes de teste do projeto: </p>
 
 ` mvn surfire:test`
