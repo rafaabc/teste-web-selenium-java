@@ -1,0 +1,6 @@
+testValidLogin,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
+"",tomsmith,SuperSecretPassword!,820.0,820.0,820.0,820.0,820.0,820.0
+testInvalidUsername,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
+"",username,SuperSecretPassword!,864.0,864.0,864.0,864.0,864.0,864.0
+testInvalidPassword,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
+"",tomsmith,password,1028.0,1028.0,1028.0,1028.0,1028.0,1028.0

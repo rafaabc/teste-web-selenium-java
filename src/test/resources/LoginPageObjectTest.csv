@@ -1,0 +1,6 @@
+testValidLogin,username,password
+              ,tomsmith,SuperSecretPassword!
+testInvalidUsername,username,password
+                   ,username,SuperSecretPassword!
+testInvalidPassword,username,password
+                   ,tomsmith,password
