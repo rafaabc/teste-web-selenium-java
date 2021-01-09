@@ -62,7 +62,7 @@ Dependências:
 
 <p align="justify"> Assim que executados os testes será criada uma pasta dentro do diretório "target", chamada "surefire-reports". </p>
 
-#Relatório
+# Relatório
 <p align="justify"> Para abrir o relatório de testes Allure via linha de comando: </p>
 
 `allure serve /PATH`*
