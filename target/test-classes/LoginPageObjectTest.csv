@@ -1,6 +1,0 @@
-testValidLogin,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
-"",tomsmith,SuperSecretPassword!,864.0,864.0,864.0,864.0,864.0,864.0,864.0,864.0,864.0,864.0
-testInvalidUsername,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
-"",username,SuperSecretPassword!,907.0,907.0,907.0,907.0,907.0,907.0,907.0,907.0,907.0,907.0
-testInvalidPassword,username,password,Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms),Duration(ms)
-"",tomsmith,password,862.0,862.0,862.0,862.0,862.0,862.0,862.0,862.0,862.0,862.0

@@ -1,8 +1,0 @@
-pages/LoginFormPage.class
-pages/SecureAreaPage.class
-test/LoginPageObjectTest.class
-pages/BasePage.class
-test/LoginTest.class
-suporte/Screenshot.class
-suporte/Generator.class
-suporte/Web.class
