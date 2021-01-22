@@ -1,4 +1,5 @@
 # Framework de Teste Automatizado com Selenium WebDriver, Java, JUnit 5 e Maven
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rafaabc_teste-web-selenium-java&metric=alert_status)](https://sonarcloud.io/dashboard?id=rafaabc_teste-web-selenium-java)
 
 <p align="justify"> Com o objetivo de consolidar os conhecimentos que venho adquirindo sobre o tema, criei esse exemplo prático
 de framework de teste web automatizado construído com SeleniumWebdriver + Java. </p>
