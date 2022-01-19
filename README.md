@@ -1,38 +1,39 @@
-# Framework de Teste Automatizado com Selenium WebDriver, Java, JUnit 5 e Maven
+# Framework of Automated Tests with Selenium WebDriver, Java, JUnit 5 and Maven
 [![Build](https://github.com/rafaabc/teste-web-selenium-java/actions/workflows/sonar.yml/badge.svg)](https://github.com/rafaabc/teste-web-selenium-java/actions/workflows/sonar.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rafaabc_teste-web-selenium-java&metric=alert_status)](https://sonarcloud.io/dashboard?id=rafaabc_teste-web-selenium-java)
 
-<p align="justify"> Com o objetivo de consolidar os conhecimentos que venho adquirindo sobre o tema, criei esse exemplo prático
-de framework de teste web automatizado construído com SeleniumWebdriver + Java. </p>
+<p align="justify"> To consolidate the knowledge that I have been acquiring on the subject, I created this practical example
+of an automated web testing framework built with SeleniumWebdriver + Java. </p>
 
-<p align="justify"> Utilizei o site de testes http://the-internet.herokuapp.com/login para simular os seguintes cenários: </p>
+<p align="justify"> I used the test site http://the-internet.herokuapp.com/login to simulate the following scenarios: </p>
 
-1. Login realizado com sucesso
-2. Tentativa de login com usuário inválido
-3. Tentativa de login com senha inválida
-4. Tentativa de login sem passar nenhuma das credenciais
+1. Login successfully
+2. Attempt to log in with an invalid user
+3. Attempt to log in with an invalid password
+4. Attempt to login without passing any credentials
 
-<p align="justify"> Criei 2 classes de teste com os mesmos cenários: sendo uma com
-uso de design pattern Page Object e a outra não. Utilizei a abordagem de Data-driven testing para
-popular um arquivo .csv com a massa de dados. Além de poder rodar os testes via linha de comando com ajuda do plugin
-Surfire, foi possível verificar os resultados com auxílio do Allure Report, um framework de relatório de testes. </p> 
+<p align="justify"> I created 2 test classes with the same scenarios: one with
+the use of Page Object design pattern and the other does not. I used the Data-driven testing approach to
+populate a .csv file with the mass of data. In addition to being able to run the tests via the command line with the help of the plugin
+Surfire, it was possible to verify the results with the help of Allure Report, a test report framework.
+ </p> 
 
-# Requisitos
+# Requirements
 
-Ferramentas:
+Tools:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download)
 - [Java SE Development Kit 8](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [Allure](https://github.com/allure-framework/allure2/releases/tag/2.13.8)
 
-Dependências:
+Dependencies:
 - [JUnit 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.7.0)
 - [Selenium Webdriver](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59)
 
-# Estrutura de diretórios
+# Directory Structure
 
 ```
-./projeto
+./project
 ├─ src/
     ├─ main
     └─ test/
@@ -46,27 +47,28 @@ Dependências:
 ```
 
 
-- src: diretório principal
-- main: diretório com código fonte da aplicação
-- test: diretório onde será construído o script de teste inicial
-- java: diretório padrão criada assim que iniciamos um projeto
-- pages: pacote contendo as classes voltadas para PageObject
-- suporte: pacote contendo as classes que auxiliam em scripts básicos
-- test: pacote contendo as classes de teste criadas
-- LoginTest: classe de teste contendo o primeiro script de teste de forma básica
-- LoginPageObjectTest: classe de teste contendo o mesmo script de teste mas com design pattern Page Object
-- resources: diretório com os arquivos .csv com massa de dados
+- src: main directory
+- main: directory with application source code
+- test: directory where the initial test script will be built
+- java: default directory created as soon as we start a project
+- pages: package containing the PageObject-oriented classes
+- support: package containing the classes that help in basic scripts
+- test: package containing the created test classes
+- LoginTest: test class containing the first test script in a basic way
+- LoginPageObjectTest: test class containing the same test script but with Page Object design pattern
+- resources: directory with the .csv files with mass data
 
-# Executando via linha de comando
-<p align="justify"> Para executar os testes via linha de comando de todas as classes de teste do projeto: </p>
+
+# Running via command line
+<p align="justify"> To run the tests via the command line of all test classes in the project: </p>
 
 ` mvn surfire:test`
 
-<p align="justify"> Assim que executados os testes será criada uma pasta dentro do diretório "target", chamada "surefire-reports". </p>
+<p align="justify"> Once the tests are executed, a folder will be created inside the "target" directory, called "surefire-reports". </p>
 
-# Relatório
-<p align="justify"> Para abrir o relatório de testes Allure via linha de comando: </p>
+# Report
+<p align="justify"> To open the Allure test report via the command line: </p>
 
 `allure serve /PATH`*
 
-<p align="justify"> *O path deve ser alterado para o caminho da pasta "surefire-reports" criada no passo anterior. </p>
+<p align="justify"> *The path must be changed to the path of the "surefire-reports" folder created in the previous step. </p>
